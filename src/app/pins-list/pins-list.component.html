@@ -1,0 +1,39 @@
+<foo-overlay-side-panel></foo-overlay-side-panel>
+
+<div class="pin-container">
+    <div class="header-bg">
+    <div class="btn-align">
+        <div>
+            <button (click)="addCustomer()"  class="btn btn-primary">+ Add Customer</button>
+        </div>
+        <div class="pin-btn-align">
+            <button (click)="addPin()" class="btn btn-primary pin-btn"> + Add pin</button>
+        </div>
+    </div>
+
+    <div class="heading-style">
+        <h1>List of Pins</h1>
+    </div>
+    </div>
+    <div>
+        <table id="example" class="display" style="width:90%;margin:30px">
+            <thead style="background-color: skyblue;">
+                <tr style="text-align: center;height: 40px;border:1px solid;">
+                    <th>Title</th>
+                    <th>Image</th>
+                    <th>Collaboratry</th>
+                    <th>Privacy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pins of pinsList" style="text-align: center;border:1px solid;height: 50px;">
+                    <td>{{pins.title}}</td>
+                    <td><img [src]="pins.selectImage" style="height:20px;width:20px;"></td>
+                    <td *ngFor="let collab of pins.collaborators">{{collab}}</td>
+                    <td>{{pins.privacy}}</td>
+                </tr>
+            </tbody>
+           
+    </table>
+    </div>
+</div>

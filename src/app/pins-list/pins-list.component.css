@@ -1,0 +1,25 @@
+.pin-container{
+    height: 100%;
+    display: block;
+}
+.header-bg{
+    background-color: skyblue;
+}
+.btn-align{
+    text-align: right;
+    padding: 20px;
+}
+.pin-btn-align{
+    padding-top:20px;
+}
+.pin-btn{
+    width:142px;
+    text-align: left;
+}
+.heading-style{ 
+    padding-left: 20px;
+}
+.heading-style h1{
+    font-weight: bold;
+    margin-bottom: 0;
+}

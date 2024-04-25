@@ -1,0 +1,20 @@
+.drop-file{
+    min-height: 100px;
+     border: 2px dashed #ccc; 
+     padding: 20px;
+    text-align: center;
+}
+.form-group,
+.select-image{
+    padding-top:15px;
+}
+.form-group label {
+    padding: 10px 0;
+}
+.btn {
+    margin-top:15px;
+}
+.display-image{
+    width:80px;
+    height: 80px;
+}
